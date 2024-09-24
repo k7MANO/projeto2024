@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+
+}
+h1 { 
+    font-family: "Concert One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    color: #000000;
+    
+}
+p {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.btn {
+    
+    background-color: #000000;
+    border: none;
+    color: white;
+    width: 20%;
+    height: 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+      
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Colunas flexíveis */
+    gap: 16px; /* Espaçamento entre os itens */
+    padding: 16px; /* Padding interno do main */
+}
+
+.item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8 {
+    overflow: hidden; /* Esconde partes da imagem que extrapolam */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.item1 img,
+.item2 img,
+.item3 img,
+.item4 img,
+.item5 img,
+.item6 img,
+.item7 img,
+.item8 img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do item */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaços em branco abaixo das imagens */
+}
+
+div{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+footer {
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Concert One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    align-items: center;
+    position: absolute; /* Posiciona o footer em relação ao body */
+    bottom: 0; /* Fixa o footer no fundo */
+    left: 0;
+    right: 0; /* Ocupa toda a largura */
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
